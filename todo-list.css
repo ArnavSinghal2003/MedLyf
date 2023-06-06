@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -127,3 +128,18 @@
   border-bottom: 2px solid #162938;
   margin: 30px 0;
 }
+=======
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  .main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #31C480, #d1f6c0);
+
+  }
+>>>>>>> a7524dfb9face59cee5e5facd0223d99ee45530d
