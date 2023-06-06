@@ -1,6 +1,4 @@
-const todoList=[{
-  name:'paracetamol',
-  dueDate:'2023-06-4'}]; 
+const todoList=[]; 
 renderTodoList();
   function renderTodoList(){
   let todoHTML='';

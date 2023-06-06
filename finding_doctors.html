@@ -5,8 +5,25 @@
   <link rel="stylesheet" href="finding_doctor_style.css">
 </head>
 <body>
-  <img id="image"src="white logo no bg.png">
-
+  <div class="main">
+    <nav>
+        <div class="logo">
+            <img src="blue logo no bg.png">
+            </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="options.html">Options</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </div>
+    </nav>
+    <hr size="2"  noshade>
+    <div class="big-logo">
+        <img src="blue logo no bg.png">
+        </div>
   <form id="search"> 
     <h1>
       Find Doctors Near You
@@ -14,7 +31,7 @@
     <label for="location">Location:</label>
     <select id="location" required>
       <option value="">Select location</option>
-      <option value="vellore">vellore</option>
+      <option value="Vellore">Vellore</option>
     </select>
 
     <label for="requirement">Requirement:</label>
@@ -25,9 +42,6 @@
       <option value="Dermatology">Dermatology</option>
       <option value="Gynocologist">Gynocologist</option>
       <option value="Dentist">Dentist</option>
-
-
-
     </select>
 
     <button type="submit">Search</button>
@@ -50,16 +64,16 @@
       resultDiv.innerHTML = '';
 
       var doctors = [
-        { name: 'Dr. Babita', specialty: 'General', location: 'vellore' },
-        { name: 'Dr. Riya Sharma', specialty: 'Cardiology', location: 'vellore' },
-        { name: 'Dr. Ananya Rathi', specialty: 'Dermatology', location: 'vellore' },
-        { name: 'Dr. Arnav Singhal', specialty: 'General', location: 'vellore' },
-        { name: 'Dr. Ayush kumar', specialty: 'Dermatology', location: 'vellore' },
-        { name: 'Dr. Sameer kumar', specialty: 'Dentist', location: 'vellore' },
-        { name: 'Dr. Paarth ', specialty: 'Gynocologist', location: 'vellore' },
-        { name: 'Dr. Ayush kumar', specialty: 'Dentist', location: 'vellore' },
-        { name: 'Dr. Sonia', specialty: 'Dermatology', location: 'vellore' },
-        { name: 'Dr. Modi', specialty: 'Cardiology', location: 'vellore' },
+        { name: 'Dr. Babita', specialty: 'General', location: 'Vellore' },
+        { name: 'Dr. Riya Sharma', specialty: 'Cardiology', location: 'Vellore' },
+        { name: 'Dr. Ananya Rathi', specialty: 'Dermatology', location: 'Vellore' },
+        { name: 'Dr. Arnav Singhal', specialty: 'General', location: 'Vellore' },
+        { name: 'Dr. Ayush kumar', specialty: 'Dermatology', location: 'Vellore' },
+        { name: 'Dr. Sameer kumar', specialty: 'Dentist', location: 'Vellore' },
+        { name: 'Dr. Paarth ', specialty: 'Gynocologist', location: 'Vellore' },
+        { name: 'Dr. Ayush kumar', specialty: 'Dentist', location: 'Vellore' },
+        { name: 'Dr. Sonia', specialty: 'Dermatology', location: 'Vellore' },
+        { name: 'Dr. Modi', specialty: 'Cardiology', location: 'Vellore' },
       ];
 
       var filteredDoctors = doctors.filter(function(doctor) {
